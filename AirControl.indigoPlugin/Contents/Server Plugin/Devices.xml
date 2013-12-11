@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<Devices>
+	<Device type="custom" id="appletv">
+		<Name>Jailbroken AppleTV</Name>
+		<ConfigUI>
+			<Field id="address" type="textfield">
+				<Label>IP or Hostname:</Label>
+			</Field>
+		</ConfigUI>
+		<States>
+			<State id="playStatus">
+				<ValueType>
+					<List>
+						<Option value="playing">Playing</Option>
+						<Option value="stopped">Stopped</Option>
+					</List>
+				</ValueType>
+				<TriggerLabel>Player Status Changed</TriggerLabel>
+				<TriggerLabelPrefix>Player Status is</TriggerLabelPrefix>
+				<ControlPageLabel>Current Player Status</ControlPageLabel>
+				<ControlPageLabelPrefix>Player Status is</ControlPageLabelPrefix>
+			</State>
+			<State id="status">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media Type Changed</TriggerLabel>
+				<ControlPageLabel>Current Media Type</ControlPageLabel>
+			</State>
+			<State id="type">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media Type Changed</TriggerLabel>
+				<ControlPageLabel>Current Media Type</ControlPageLabel>
+			</State>
+			<State id="name">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media Name Changed</TriggerLabel>
+				<ControlPageLabel>Current Media Name</ControlPageLabel>
+			</State>
+			<State id="overview">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media Overview Changed</TriggerLabel>
+				<ControlPageLabel>Current Media Overview</ControlPageLabel>
+			</State>
+			<State id="studio">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media Studio Changed</TriggerLabel>
+				<ControlPageLabel>Current Media Studio</ControlPageLabel>
+			</State>
+			<State id="genre">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media Genre Changed</TriggerLabel>
+				<ControlPageLabel>Current Media Genre</ControlPageLabel>
+			</State>
+			<State id="album">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media Album Changed</TriggerLabel>
+				<ControlPageLabel>Current Media Album</ControlPageLabel>
+			</State>
+			<State id="artistName">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media Artist Changed</TriggerLabel>
+				<ControlPageLabel>Current Media Artist</ControlPageLabel>
+			</State>
+			<State id="coverArtURL">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media Cover Art Changed</TriggerLabel>
+				<ControlPageLabel>Current Media Cover Art</ControlPageLabel>
+			</State>
+			<State id="copyright">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media Copyright Changed</TriggerLabel>
+				<ControlPageLabel>Current Media Copyright</ControlPageLabel>
+			</State>
+			<State id="trackNumber">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media Track Number Changed</TriggerLabel>
+				<ControlPageLabel>Current Media Track Number</ControlPageLabel>
+			</State>
+			<State id="trackCount">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media Track Count Changed</TriggerLabel>
+				<ControlPageLabel>Current Media Track Count</ControlPageLabel>
+			</State>
+			<State id="seasonName">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media Season Name Changed</TriggerLabel>
+				<ControlPageLabel>Current Media Season Name</ControlPageLabel>
+			</State>
+			<State id="tagline">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media Tagline Changed</TriggerLabel>
+				<ControlPageLabel>Current Media Tagline</ControlPageLabel>
+			</State>
+			<State id="category">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media Category Changed</TriggerLabel>
+				<ControlPageLabel>Current Media Category</ControlPageLabel>
+			</State>
+			<State id="viewcount">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media View Count Changed</TriggerLabel>
+				<ControlPageLabel>Current Media View Count</ControlPageLabel>
+			</State>
+			<State id="certification">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media Certification Changed</TriggerLabel>
+				<ControlPageLabel>Current Media Certification</ControlPageLabel>
+			</State>
+			<State id="released">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media Release Date Changed</TriggerLabel>
+				<ControlPageLabel>Current Media Release Date</ControlPageLabel>
+			</State>
+			<State id="runtime">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Media Run Time Changed</TriggerLabel>
+				<ControlPageLabel>Current Media Run Time</ControlPageLabel>
+			</State>
+		</States>
+		<UiDisplayStateId>playStatus</UiDisplayStateId>
+	</Device>
+</Devices>

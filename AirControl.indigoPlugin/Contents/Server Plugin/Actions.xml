@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<Actions>
+	<Action id="sendButtonPress" deviceFilter="self">
+		<Name>Send Button Press</Name>
+		<CallbackMethod>sendButtonPress</CallbackMethod>
+		<ConfigUI>
+			<Field id="keyToPress" type="menu" defaultValue="1">
+				<Label>Button to send:</Label>
+				<List>
+					<Option value="1">Menu</Option>
+					<Option value="2">Menu Hold</Option>
+					<Option value="3">Arrow Up</Option>
+					<Option value="4">Arrow Down</Option>
+					<Option value="5">Select</Option>
+					<Option value="6">Arrow Left</Option>
+					<Option value="7">Arrow Right</Option>
+					<Option value="10">Play/Pause</Option>
+					<Option value="15">Pause</Option>
+					<Option value="16">Play</Option>
+					<Option value="17">Stop</Option>
+					<Option value="18">Fast Forward</Option>
+					<Option value="19">Rewind</Option>
+					<Option value="20">Chapter Skip Forward</Option>
+					<Option value="21">Chapter Skip Backwards</Option>
+					<Option value="22">List/Select Hold</Option>
+				</List>
+			</Field>
+			<Field id="description" type="textfield" hidden="true">
+				<Label></Label>
+			</Field>
+		</ConfigUI>
+	</Action>
+	<Action id="goToApp" deviceFilter="self">
+		<Name>Go to App</Name>
+		<CallbackMethod>goToApp</CallbackMethod>
+		<ConfigUI>
+			<Field id="app" type="menu" defaultValue="">
+				<Label>App:</Label>
+				<List class="self" method="getAppList" dynamicReload="true" />
+				<CallbackMethod>appSelected</CallbackMethod>
+			</Field>
+			<Field id="categoryAvailable" type="checkbox" hidden="true" defaultValue="false">
+				<Label></Label>
+			</Field>
+			<Field id="category" type="menu" visibleBindingId="categoryAvailable" visibleBindingValue="true">
+				<Label>Category:</Label>
+				<List class="self" method="getCategoryList" dynamicReload="true" />
+			</Field>
+			<Field id="force" type="checkbox">
+				<Label>Force change:</Label>
+				<Description>Check to force any playing media to stop.</Description>
+			</Field>
+			<Field id="lab" type="label" alignWithControl="true" fontColor="darkgray">
+				<Label>AirControl will not change to an app if there is media playing. Checking this checkbox will have the plugin to stop the media playing before going to the selected app.</Label>
+			</Field>
+			<Field id="description" type="textfield" hidden="true">
+				<Label></Label>
+			</Field>
+		</ConfigUI>
+	</Action>
+</Actions>

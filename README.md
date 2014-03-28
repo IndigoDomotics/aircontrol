@@ -18,6 +18,12 @@ Perceptive Automation is hosting this repository and will do minimal management.
 
 We (Perceptive Automation) don't guarantee anything about this plugin - that this plugin works or does what the description above states, so use at your own risk. We will attempt to answer questions about the plugin but we can't help with the jailbreaking process or installing aTVFlash.
 
+##Plugin ID
+
+Here's the plugin ID in case you need to programmatically restart the plugin:
+
+**Plugin ID**: com.perceptiveautomation.opensource.aircontrol
+
 ##Technical Details
 
 The documentation on the capabilities for AirControl are scattered around the FireCore site a bit, so I'm going to add what I find here. First, these are the states that I'm presenting:
